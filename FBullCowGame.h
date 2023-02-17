@@ -19,8 +19,8 @@ enum class EGuessStatus
 	Not_Lowercase
 };
 
-
-class FBullCowGame {
+class FBullCowGame
+{
 public:
 	FBullCowGame();
 
@@ -35,9 +35,9 @@ public:
 
 private:
 	int32 MyCurrentTry;
-	int32 MyMaxTries;
 	FString MyHiddenWord;
 	bool bGameIsWon;
 
 	bool IsIsogram(FString) const;
+	bool IsLowercase(FString) const;
 };
